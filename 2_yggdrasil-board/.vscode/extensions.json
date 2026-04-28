@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    // Opens a local dev server with live reload — essential for Arc VII (fetch/CORS)
+    "ritwickdey.liveserver",
+
+    // Auto-renames the matching closing tag when you rename an opening tag
+    "formulahendry.auto-rename-tag",
+
+    // IntelliSense for CSS class names and IDs referenced in HTML
+    "ecmel.vscode-html-css",
+
+    // Shows a colour swatch inline next to hex codes and CSS colour values
+    "naumovs.color-highlight",
+
+    // Autocompletes file paths in src/href attributes
+    "christian-kohler.path-intellisense",
+
+    // Prettier — opinionated code formatter (HTML, CSS, JS)
+    // Run with Shift+Alt+F (or Shift+Option+F on Mac)
+    "esbenp.prettier-vscode"
+  ]
+}

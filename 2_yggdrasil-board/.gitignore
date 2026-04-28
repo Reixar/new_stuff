@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+
+# VS Code (keep extensions.json and settings.json, ignore personal/local overrides)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Node (not used in this project, but good habit if you ever run npm for tooling)
+node_modules/
+npm-debug.log*
+
+# Misc
+*.log

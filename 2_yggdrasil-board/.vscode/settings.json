@@ -1,0 +1,27 @@
+{
+  // Format on save with Prettier
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Prettier config inline — no separate .prettierrc needed
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
+
+  // Live Server — opens on the project root so relative paths work correctly
+  "liveServer.settings.root": "/",
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // Highlight the matching tag when your cursor is inside it
+  "editor.linkedEditing": true,
+
+  // Show a ruler at 100 chars — useful for keeping lines readable
+  "editor.rulers": [100],
+
+  // Trim trailing whitespace on save
+  "files.trimTrailingWhitespace": true,
+
+  // Insert a newline at end of file (standard practice)
+  "files.insertFinalNewline": true
+}
