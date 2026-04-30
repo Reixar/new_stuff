@@ -39,6 +39,65 @@
         <button>Genre</button>
         <button>Party Count</button>
       </section>
+
+      <section>
+        <h2>Quest Cards</h2>
+        <style>
+          table {
+            table-layout: fixed;
+            width: 25%;
+          }
+
+          td,
+          th {
+            border: 1px solid black;
+            word-wrap: break-word;
+          }
+
+          .col1 {
+            width: 30%;
+          }
+          .col2 {
+            width: 70%;
+          }
+        </style>
+        <a href="party.html" style="text-decoration: none; color: inherit">
+          <table border="1" style="cursor: pointer">
+            <td colspan="4" style="text-align: center">
+              (Quest Name) Note: Future will have interactable styled cards
+            </td>
+
+            <tr>
+              <th>
+                Genre
+                <span style="color: red">
+                  Genre will be indicated by colour such as this
+                </span>
+              </th>
+              <th>difficulty (in stars)</th>
+              <th>Rewards</th>
+              <th>Party Count</th>
+            </tr>
+
+            <tr>
+              <td colspan="4" style="text-align: left">
+                <dl>
+                  <style>
+                    dd {
+                      margin-left: 10px;
+                    }
+                  </style>
+
+                  <dt>Description:</dt>
+                  <dd>(Insert summarry discription of the quest)</dd>
+                  <dt>(title indicating stage of quest if apprilcable)</dt>
+                  <dd>(Current stage of quest)</dd>
+                </dl>
+              </td>
+            </tr>
+          </table>
+        </a>
+      </section>
     </main>
 
     <footer>
