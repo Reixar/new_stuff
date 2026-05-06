@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Yggdrasil-Party</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script async src="scripts.js"></script>
     <link rel="icon" href="/assets/images/favicon.ico" type="images/x-icon" />
   </head>
@@ -25,17 +25,56 @@
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h1>Chosen Quest</h1>
-        <p>Active Quest!</p>
-      </section>
+    <table class="tabel1">
+      <caption>
+        Accepted Quest
+      </caption>
+      <thead>
+        <th scope="col">Quest</th>
 
-      <section>
-        <h1>Party Roster</h1>
-        <h3>Who needs enemies when we have friends like these</h3>
-      </section>
-    </main>
+        <th scope="col">Type</th>
+
+        <th scope="col">Difficulty</th>
+
+        <th scope="col">Reward</th>
+
+        <th scope="col">Deadline</th>
+
+        <th scope="col">Actions</th>
+      </thead>
+
+      <tr>
+        <td id="Quest_name">&nbsp;</td>
+        <td id="Type_quest">&nbsp;</td>
+        <td id="Diff_rating">&nbsp;</td>
+        <td id="Reward_item">&nbsp;</td>
+        <td id="Deadline_Date">&nbsp;</td>
+        <td id="Action_needed">&nbsp;</td>
+      </tr>
+    </table>
+    <br />
+
+    <table>
+      <caption>
+        Party Roster
+      </caption>
+      <thead>
+        <th scope="col">Adventurer Name</th>
+
+        <th scope="col">Class</th>
+
+        <th scope="col">Level</th>
+
+        <th scope="col">Actions</th>
+      </thead>
+
+      <tr>
+        <td id="Member_name">&nbsp;</td>
+        <td id="Type_class">&nbsp;</td>
+        <td id="Rating_level">&nbsp;</td>
+        <td id="Player_action">&nbsp;</td>
+      </tr>
+    </table>
 
     <footer>
       <p>© 2026 Yggdrasil. Made with passion and a bit of caffeine</p>
