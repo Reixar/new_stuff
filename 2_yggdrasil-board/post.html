@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Yggdrasil-Post</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script async src="scripts.js"></script>
     <link rel="icon" href="/assets/images/favicon.ico" type="images/x-icon" />
   </head>
@@ -25,15 +25,57 @@
       </nav>
     </header>
 
-    <main>
-      <form>
-        <label for="User name"></label>
-        <input type="text" />
+    <fieldset>
+      <legend>The Quest Scroll</legend>
 
-        <button>Post</button>
-      </form>
-    </main>
+      <label for="quest_name">Quest Title</label>
+      <input type="text" id="quest_name" required />
 
+      <label for="quest_choice">Quest Type</label>
+      <select name="type_quest" id="quest_choice" required>
+        <option value="">Select Quest Type</option>
+        <option value="bounty">Bounty</option>
+        <option value="escort">Escort</option>
+        <option value="retrieve">Retrieval</option>
+        <option value="explore">Exploration</option>
+        <option value="exterminate">Extermination</option>
+        <option value="diplomat">Diplomatic</option>
+      </select>
+
+      <fieldset class="descript">
+        <legend>Description</legend>
+
+        <textarea
+          name="description"
+          id="quest_descript"
+          rows="5"
+          cols="56"
+          required
+        ></textarea>
+      </fieldset>
+
+      <label for="gold_amount">Gold</label>
+      <input
+        type="number"
+        min="0"
+        max="1000"
+        id="gold_amount"
+        class="gold"
+        required
+      />
+
+      <label for="Date_line">Deadline</label>
+      <input type="date" name="date" id="Date_line" required />
+
+      <br />
+
+      <label for="require_special">Special Requirements</label>
+      <input type="text" id="require_special" />
+
+      <br />
+
+      <input type="submit" id="submit_end" value="Register Quest" />
+    </fieldset>
     <footer>
       <p>© 2026 Yggdrasil. Made with passion and a bit of caffeine</p>
     </footer>
