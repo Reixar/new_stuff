@@ -8,64 +8,65 @@
     <script async src="scripts.js"></script>
     <link rel="icon" href="/assets/images/favicon.ico" type="images/x-icon" />
   </head>
+  
   <body>
     <header>
-      <div class="logo">
-        <img src="assets/images/LOGO.ico" alt="Oops it broke" />
-      </div>
+      <h1>Yggdrasil</h1>
 
       <nav>
         <ul>
           <li><a href="index.html"> Home</a></li>
           <li><a href="board.html">Board</a></li>
-          <li><a href="detail.html">Details</a></li>
           <li><a href="party.html">Party</a></li>
           <li><a href="post.html">Post</a></li>
+          <li><a href="detail.html">About</a></li>
         </ul>
       </nav>
     </header>
 
-    <table class="tabel_1">
-      <caption>
-        Accepted Quest
-      </caption>
-      <thead>
-        <th scope="col">Quest</th>
-        <th scope="col">Type</th>
-        <th scope="col">Difficulty</th>
-        <th scope="col">Reward</th>
-        <th scope="col">Deadline</th>
-        <th scope="col">Actions</th>
-      </thead>
-
-      <tr>
-        <td id="Quest_name">&nbsp;</td>
-        <td id="Type_quest">&nbsp;</td>
-        <td id="Diff_rating">&nbsp;</td>
-        <td id="Reward_item">&nbsp;</td>
-        <td id="Deadline_Date">&nbsp;</td>
-        <td id="Action_needed">&nbsp;</td>
-      </tr>
-    </table>
-
-    <table>
-      <caption>
-        Party Roster
-      </caption>
-      <thead>
-        <th scope="col">Adventurer Name</th>
-        <th scope="col">Class</th>
-        <th scope="col">Level</th>
-        <th scope="col">Actions</th>
-      </thead>
-
-      <tr>
-        <td id="Member_name">&nbsp;</td>
-        <td id="Type_class">&nbsp;</td>
-        <td id="Rating_level">&nbsp;</td>
-        <td id="Player_action">&nbsp;</td>
-      </tr>
-    </table>
+    <main>
+      <table class="tabel_1"> <!-- TODO: Remove unused class -->
+        <caption>
+          Accepted Quest
+        </caption>
+        <thead>
+          <th scope="col">Quest</th>
+          <th scope="col">Type</th>
+          <th scope="col">Difficulty</th>
+          <th scope="col">Reward</th>
+          <th scope="col">Deadline</th>
+          <th scope="col">Actions</th>
+        </thead>
+  
+        <tr>
+          <td id="Quest_name">&nbsp;</td>
+          <td id="Type_quest">&nbsp;</td>
+          <td id="Diff_rating">&nbsp;</td>
+          <td id="Reward_item">&nbsp;</td>
+          <td id="Deadline_Date">&nbsp;</td>
+          <td id="Action_needed">&nbsp;</td>
+        </tr>
+      </table>
+  
+      <table>
+        <caption>
+          Party Roster
+        </caption>
+        <thead>
+          <th scope="col">Adventurer Name</th>
+          <th scope="col">Class</th>
+          <th scope="col">Level</th>
+          <th scope="col">Actions</th>
+        </thead>
+  
+        <tr>
+          <td id="Member_name">&nbsp;</td>
+          <td id="Type_class">&nbsp;</td>
+          <td id="Rating_level">&nbsp;</td>
+          <td id="Player_action">&nbsp;</td>
+        </tr>
+      </table>
+    </main>
 
     <footer>
       <p>© 2026 Yggdrasil. Made with passion and a bit of caffeine</p>

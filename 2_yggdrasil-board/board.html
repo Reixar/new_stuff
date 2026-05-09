@@ -8,6 +8,7 @@
     <script async src="scripts.js"></script>
     <link rel="icon" href="/assets/images/favicon.ico" type="images/x-icon" />
   </head>
+
   <body>
     <header>
       <h1>Yggdrasil</h1>
@@ -40,6 +41,8 @@
 
       <section>
         <h2>Quest Cards</h2>
+        <!-- The style tag is usually declared in the head section -->
+        <!-- Even better standard is to have styles isolated to seperate css files and imported in the head section -->
         <style>
           table {
             table-layout: fixed;
@@ -52,6 +55,7 @@
             word-wrap: break-word;
           }
 
+          /* TODO: Remove unused classes */
           .col1 {
             width: 30%;
           }
@@ -59,9 +63,9 @@
             width: 70%;
           }
         </style>
-        <a href="party.html" style="text-decoration: none; color: inherit">
-          <table border="1" style="cursor: pointer">
-            <td colspan="4" style="text-align: center">
+        <a href="party.html" style="text-decoration: none; color: inherit"> <!-- TODO: Same with these styles. Pop it in a css file and in a class or id-->
+          <table border="1" style="cursor: pointer; min-width: 500px; margin-left: auto; margin-right: auto;">
+            <td colspan="4" style="text-align: center"> <!-- TODO: <td> Has a default display of text-align: center;-->
               (Quest Name) Note: Future will have interactable styled cards
             </td>
 

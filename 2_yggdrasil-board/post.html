@@ -8,74 +8,77 @@
     <script async src="scripts.js"></script>
     <link rel="icon" href="/assets/images/favicon.ico" type="images/x-icon" />
   </head>
+  
   <body>
     <header>
-      <div class="logo">
-        <img src="assets/images/LOGO.ico" alt="Oops it broke" />
-      </div>
+      <h1>Yggdrasil</h1>
 
       <nav>
         <ul>
           <li><a href="index.html"> Home</a></li>
           <li><a href="board.html">Board</a></li>
-          <li><a href="detail.html">Details</a></li>
           <li><a href="party.html">Party</a></li>
           <li><a href="post.html">Post</a></li>
+          <li><a href="detail.html">About</a></li>
         </ul>
       </nav>
     </header>
-
-    <fieldset>
-      <legend>The Quest Scroll</legend>
-
-      <label for="quest_name">Quest Title</label>
-      <input type="text" id="quest_name" required />
-
-      <label for="quest_choice">Quest Type</label>
-      <select name="type_quest" id="quest_choice" required>
-        <option value="">Select Quest Type</option>
-        <option value="bounty">Bounty</option>
-        <option value="escort">Escort</option>
-        <option value="retrieve">Retrieval</option>
-        <option value="explore">Exploration</option>
-        <option value="exterminate">Extermination</option>
-        <option value="diplomat">Diplomatic</option>
-      </select>
-
-      <fieldset class="descript">
-        <legend>Description</legend>
-
-        <textarea
-          name="description"
-          id="quest_descript"
-          rows="5"
-          cols="56"
+    
+    <main>
+      <fieldset>
+        <legend>The Quest Scroll</legend>
+  
+        <label for="quest_name">Quest Title</label>
+        <input type="text" id="quest_name" required />
+  
+        <label for="quest_choice">Quest Type</label>
+        <select name="type_quest" id="quest_choice" required>
+          <option value="">Select Quest Type</option>
+          <option value="bounty">Bounty</option>
+          <option value="escort">Escort</option>
+          <option value="retrieve">Retrieval</option>
+          <option value="explore">Exploration</option>
+          <option value="exterminate">Extermination</option>
+          <option value="diplomat">Diplomatic</option>
+        </select>
+  
+        <fieldset class="descript">
+          <legend>Description</legend>
+  
+          <textarea
+            name="description"
+            id="quest_descript"
+            rows="5"
+            cols="56"
+            required
+          ></textarea>
+        </fieldset>
+  
+        <label for="gold_amount">Gold</label>
+        <!-- TODO: Killing the demon king will run you at least 30 000 gold -->
+        <input
+          type="number"
+          min="0"
+          max="1000"
+          id="gold_amount"
+          class="gold"
           required
-        ></textarea>
+        />
+  
+        <label for="Date_line">Deadline</label>
+        <input type="date" name="date" id="Date_line" required />
+  
+        <br />
+  
+        <label for="require_special">Special Requirements</label>
+        <input type="text" id="require_special" />
+  
+        <br />
+  
+        <input type="submit" id="submit_end" value="Register Quest" />
       </fieldset>
+    </main>
 
-      <label for="gold_amount">Gold</label>
-      <input
-        type="number"
-        min="0"
-        max="1000"
-        id="gold_amount"
-        class="gold"
-        required
-      />
-
-      <label for="Date_line">Deadline</label>
-      <input type="date" name="date" id="Date_line" required />
-
-      <br />
-
-      <label for="require_special">Special Requirements</label>
-      <input type="text" id="require_special" />
-
-      <br />
-
-      <input type="submit" id="submit_end" value="Register Quest" />
-    </fieldset>
     <footer>
       <p>© 2026 Yggdrasil. Made with passion and a bit of caffeine</p>
     </footer>

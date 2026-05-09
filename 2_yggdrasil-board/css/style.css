@@ -1,12 +1,19 @@
+/* TODO
+You tend to not use general selectors like body, div, header, main, footer, etc. 
+It's good practice to use classes and ids to target specific elements.
+It's good practice because 
+1. you can name what you are doing, for example:'.user-icon'{} instead of image {}
+2. you can't guarantee that you're not going to want to use the same element for something else.
+For example, you might want to use a image element for a user icon, and a image element for a background image.
+*/
+html {
+  background-image: url(" ../assets/images/Home.jpg");
+  background-size: 100vw;
+}
+
 body {
-  flex-direction: column;
-  min-height: 100vh;
-
-  background-image: url("../assets/images/Home.jpg");
-  background-size: cover;
-
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   color: brown;
   font-family: Papyrus, fantasy;
@@ -15,19 +22,8 @@ body {
   text-align: center;
 }
 
-body,
-html {
-  height: 100%;
-  margin: 0;
-}
-
-main {
-  flex: 1;
-}
-
 nav ul {
   display: flex;
-
   list-style: none;
   padding: 0;
   margin: 0;
