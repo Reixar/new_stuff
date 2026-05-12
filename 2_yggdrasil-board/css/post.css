@@ -1,0 +1,82 @@
+main {
+  margin: 35px;
+}
+
+fieldset {
+  border: 2px solid black;
+}
+
+.quest_naming {
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+}
+
+.quest_type {
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+}
+
+.quest_text {
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+}
+
+.gold {
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+}
+
+.date_quest {
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+}
+
+.spes_quest {
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+}
+
+.button_quest {
+  margin-top: 8px;
+  border: 2px solid black;
+  background-color: transparent;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rating {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.rating label {
+  font-size: 25px !important;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 40px;
+  color: lightgray;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.rating input:checked ~ label {
+  color: gold;
+}

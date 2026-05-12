@@ -1,0 +1,85 @@
+.search-box {
+  background-color: transparent;
+  border-color: transparent;
+  font-family: Papyrus, fantasy;
+  font-weight: bolder;
+  outline: none;
+  border: 2px solid #000000;
+  box-shadow: none;
+}
+
+button {
+  font-weight: bolder;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  font-size: 1rem;
+  background-color: transparent;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card_quest {
+  border: 2px solid black;
+  width: 275px;
+  margin: 0 auto;
+}
+
+.card_head {
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+}
+
+.info_quest {
+  display: flex;
+}
+
+.card_info {
+  flex: 1;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+.label {
+  text-decoration: underline;
+}
+
+.card_info:first-child {
+  border-left: none;
+}
+
+.card_info p {
+  min-height: auto;
+}
+
+.card_descript h3 {
+  margin: 0px;
+  text-decoration: underline;
+}
+.card_descript {
+  border-bottom: 2px solid #000000;
+}
+
+.card_descript p {
+  min-height: auto;
+}
+
+.card_redirect a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.star {
+  font-size: small;
+}
+
+.full {
+  color: gold;
+}
+
+.hollow {
+  color: white;
+}

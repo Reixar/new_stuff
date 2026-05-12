@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>Yggdrasil-Post</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/post.css" />
     <script async src="scripts.js"></script>
     <link rel="icon" href="/assets/images/favicon.ico" type="images/x-icon" />
   </head>
-  
+
   <body>
     <header>
       <h1>Yggdrasil</h1>
@@ -23,16 +24,22 @@
         </ul>
       </nav>
     </header>
-    
+
     <main>
       <fieldset>
         <legend>The Quest Scroll</legend>
-  
+
         <label for="quest_name">Quest Title</label>
-        <input type="text" id="quest_name" required />
-  
+        <input
+          type="text"
+          class="quest_naming"
+          id="quest_name"
+          placeholder="Quest Name"
+          required
+        />
+
         <label for="quest_choice">Quest Type</label>
-        <select name="type_quest" id="quest_choice" required>
+        <select name="type_quest" class="quest_type" id="quest_choice" required>
           <option value="">Select Quest Type</option>
           <option value="bounty">Bounty</option>
           <option value="escort">Escort</option>
@@ -41,46 +48,77 @@
           <option value="exterminate">Extermination</option>
           <option value="diplomat">Diplomatic</option>
         </select>
-  
+
         <fieldset class="descript">
           <legend>Description</legend>
-  
+
           <textarea
             name="description"
             id="quest_descript"
+            class="quest_text"
             rows="5"
-            cols="56"
+            cols="85"
             required
           ></textarea>
         </fieldset>
-  
+
         <label for="gold_amount">Gold</label>
-        <!-- TODO: Killing the demon king will run you at least 30 000 gold -->
         <input
           type="number"
           min="0"
-          max="1000"
+          max="30000"
           id="gold_amount"
           class="gold"
           required
         />
-  
+
         <label for="Date_line">Deadline</label>
-        <input type="date" name="date" id="Date_line" required />
-  
+        <input
+          type="date"
+          class="date_quest"
+          name="date"
+          id="Date_line"
+          required
+        />
+
+        <label for="difficulty">Difficulty</label>
+        <div class="rating">
+          <article></article>
+          <input type="radio" name="star" id="star5" value="5" />
+          <label for="star5">★</label>
+
+          <input type="radio" name="star" id="star4" value="4" />
+          <label for="star4">★</label>
+
+          <input type="radio" name="star" id="star3" value="3" />
+          <label for="star3">★</label>
+
+          <input type="radio" name="star" id="star2" value="2" />
+          <label for="star2">★</label>
+
+          <input type="radio" name="star" id="star1" value="1" />
+          <label for="star1">★</label>
+        </div>
+
         <br />
-  
+
         <label for="require_special">Special Requirements</label>
-        <input type="text" id="require_special" />
-  
+        <input type="text" class="spes_quest" id="require_special" />
+
         <br />
-  
-        <input type="submit" id="submit_end" value="Register Quest" />
+
+        <input
+          type="submit"
+          id="submit_end"
+          class="button_quest"
+          value="Register Quest"
+        />
       </fieldset>
     </main>
 
     <footer>
       <p>© 2026 Yggdrasil. Made with passion and a bit of caffeine</p>
+      <img src="assets/images/Footer.png" alt="raitnie" />
     </footer>
   </body>
 </html>
