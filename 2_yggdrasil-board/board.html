@@ -4,35 +4,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Yggdrasil-Board</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/board.css" />
     <script async src="scripts.js"></script>
     <link rel="icon" href="/assets/images/favicon.ico" type="images/x-icon" />
   </head>
+
   <body>
     <header>
-      <div class="logo">
-        <img src="assets/images/LOGO.ico" alt="Oops it broke" />
-      </div>
+      <h1>Yggdrasil</h1>
 
       <nav>
         <ul>
           <li><a href="index.html"> Home</a></li>
           <li><a href="board.html">Board</a></li>
-          <li><a href="detail.html">Details</a></li>
           <li><a href="party.html">Party</a></li>
           <li><a href="post.html">Post</a></li>
+          <li><a href="detail.html">About</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section>
-        <h1>Find What Your Heart Desires</h1>
-        <input type="text" id="search" placeholder="Search..." />
+        <h2>Find What Your Heart Desires</h2>
+        <input
+          type="text"
+          id="search"
+          class="search-box"
+          placeholder="Search..."
+        />
       </section>
 
       <section>
-        <h1>Refine Your Search</h1>
+        <h2>Refine Your Search</h2>
         <button>Oldest to Newest</button>
         <button>Newest to Oldest</button>
         <button>Most Recent</button>
@@ -42,66 +47,51 @@
 
       <section>
         <h2>Quest Cards</h2>
-        <style>
-          table {
-            table-layout: fixed;
-            width: 25%;
-          }
 
-          td,
-          th {
-            border: 1px solid black;
-            word-wrap: break-word;
-          }
+        <div class="card_quest">
+          <h3 class="card_head">(Quest Name)</h3>
 
-          .col1 {
-            width: 30%;
-          }
-          .col2 {
-            width: 70%;
-          }
-        </style>
-        <a href="party.html" style="text-decoration: none; color: inherit">
-          <table border="1" style="cursor: pointer">
-            <td colspan="4" style="text-align: center">
-              (Quest Name) Note: Future will have interactable styled cards
-            </td>
+          <div class="info_quest">
+            <div class="card_info">
+              <span class="label">Genre</span>
+              <p id="=Genre"></p>
+            </div>
 
-            <tr>
-              <th>
-                Genre
-                <span style="color: red">
-                  Genre will be indicated by colour such as this
-                </span>
-              </th>
-              <th>difficulty (in stars)</th>
-              <th>Rewards</th>
-              <th>Party Count</th>
-            </tr>
+            <div class="card_info">
+              <span class="label">Difficulty</span>
+              <div class="rating_star" id="rating">
+                <span class="star hollow full">★</span>
+                <span class="star hollow full">★</span>
+                <span class="star hollow full">★</span>
+                <span class="star hollow full">★</span>
+                <span class="star hollow full">★</span>
+              </div>
+            </div>
 
-            <tr>
-              <td colspan="4" style="text-align: left">
-                <dl>
-                  <style>
-                    dd {
-                      margin-left: 10px;
-                    }
-                  </style>
+            <div class="card_info">
+              <span class="label">Reward</span>
+              <p id="=Reward"></p>
+            </div>
 
-                  <dt>Description:</dt>
-                  <dd>(Insert summarry discription of the quest)</dd>
-                  <dt>(title indicating stage of quest if apprilcable)</dt>
-                  <dd>(Current stage of quest)</dd>
-                </dl>
-              </td>
-            </tr>
-          </table>
-        </a>
+            <div class="card_info">
+              <span class="label">Count</span>
+              <p id="=Party_Count"></p>
+            </div>
+          </div>
+          <div class="card_descript">
+            <h3>Description:</h3>
+            <p id="card_description"></p>
+          </div>
+          <div class="card_redirect">
+            <a href="party.html"> Details </a>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>© 2026 Yggdrasil. Made with passion and a bit of caffeine</p>
+      <img src="assets/images/Footer.png" alt="raitnie" />
     </footer>
   </body>
 </html>
